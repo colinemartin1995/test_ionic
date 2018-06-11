@@ -22,6 +22,12 @@
       </ion-label>
       <ion-input type="text" placeholder=""name="firstName"[(ngModel)]="firstName" ></ion-input>
     </ion-item>
-    <button ion-button color="secondary" (click)="saveClient(lastName,firstName)">Sauvegarder</button>
+    <ion-item id="client-input3">
+      <ion-label>
+        Email
+      </ion-label>
+      <ion-input type="email" placeholder=""name="email"[(ngModel)]="email"></ion-input>
+    </ion-item>
+    <button ion-button color="secondary" (click)="saveClient(lastName,firstName,email)">Sauvegarder</button>
   </form>
 </ion-content>

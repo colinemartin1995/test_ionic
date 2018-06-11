@@ -2,8 +2,6 @@
 # http://git-scm.com/docs/gitignore
 
 .src/app/firebase.credentials.ts
-.package-lock.json
-
 *~
 *.sw[mnpcod]
 *.log

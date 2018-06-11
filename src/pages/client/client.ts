@@ -8,19 +8,23 @@ import { AngularFireDatabase,AngularFireList } from 'angularfire2/database';
 })
 export class Client {
 
-  private firstName:string;
-  private lastName:string;
+  public firstName:string;
+  public lastName:string;
+  public email:string;
   client = {};
 
 
-  saveClient(lastName,firstName ){
+  saveClient(lastName,firstName, email ){
 
     this.lastName = lastName;
     this.firstName = firstName;
+    this.email = email;
     this.client = {
       nom : this.lastName.toUpperCase(),
-      prenom : this.firstName
+      prenom : this.firstName,
+      email : this.email
     }
+    console.log(email);
     this.clients.push(this.client);
 
   }
