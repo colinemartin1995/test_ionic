@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Client
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page2">
+  <form id="client-form1">
+    <ion-item id="client-input2">
+      <ion-label>
+        Nom
+      </ion-label>
+      <ion-input type="text" placeholder=""name="lastName"[(ngModel)]="lastName"></ion-input>
+    </ion-item>
+    <ion-item id="client-input3">
+      <ion-label>
+        Prénom
+      </ion-label>
+      <ion-input type="text" placeholder=""name="firstName"[(ngModel)]="firstName" ></ion-input>
+    </ion-item>
+    <button ion-button color="secondary" (click)="saveClient(lastName,firstName)">Sauvegarder</button>
+  </form>
+</ion-content>
